@@ -1,0 +1,28 @@
+$pills: 3;
+
+// .tab-panel {
+// 	width: 100%;
+// }
+
+.nav>li{
+	width: (100%/$pills)-1%;
+}
+
+.user__img {
+	height: 3em;
+	width: 3em;
+}
+
+.tab-panel {
+	min-width: 250px;
+}
+
+.user__name {
+		left: 1em;
+		position: relative;
+		font-family: roboto;
+}
+
+.user_info {
+	float: right;
+}

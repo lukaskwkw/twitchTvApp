@@ -1,0 +1,19 @@
+.nav > li {
+  width: 32.33333%; }
+
+.user__img {
+  height: 3em;
+  width: 3em; }
+
+.tab-panel {
+  min-width: 250px; }
+
+.user__name {
+  left: 1em;
+  position: relative;
+  font-family: roboto; }
+
+.user_info {
+  float: right; }
+
+/*# sourceMappingURL=style.css.map */
