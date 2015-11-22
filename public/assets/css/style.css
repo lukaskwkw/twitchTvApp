@@ -1,12 +1,22 @@
-.nav > li {
-  width: 32.33333%; }
+.pill {
+  margin: 0 !important;
+  width: 33.33333%; }
+
+.tab-panel {
+  min-width: 250px;
+  margin-top: 30px; }
+
+.container-fluid > div {
+  margin-top: 1em;
+  border-radius: 1em;
+  border: 2px solid black; }
+
+.user:hover {
+  background-color: rgba(212, 232, 234, 0.2); }
 
 .user__img {
   height: 3em;
   width: 3em; }
-
-.tab-panel {
-  min-width: 250px; }
 
 .user__name {
   left: 1em;
@@ -14,6 +24,13 @@
   font-family: roboto; }
 
 .user_info {
-  float: right; }
+  position: absolute;
+  right: 0;
+  top: 1.5em; }
+
+.user__status {
+  position: absolute;
+  right: 1em;
+  top: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
