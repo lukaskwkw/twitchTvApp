@@ -26,20 +26,17 @@ function search ()
 		$(".user").show();
 		return;
 	}
-	var regex = new RegExp(search, "gi");
+
+	var regex = new RegExp(search, "i");
 	for (var i = 0; i < streamsJson.length; i++) {
-		if (regex.test(streamsJson[i])===true)
-			{
-				// why it work when cl is before? i don't know :(
-				// console.log(search,regex,i,streamsJson[i],regex.test(streamsJson[i]));
+		 if (regex.test(streamsJson[i])===true)
 				$('.'+streamsJson[i]).show();
-			}
 		else
-			{
-				// why it work when cl is before? i don't know :(
-				// console.log(search,regex,i,streamsJson[i],regex.test(streamsJson[i]));
 				$('.'+streamsJson[i]).hide();
-			}
+		// if (streamsJson[i].search(regex)>-1)
+		// 		$('.'+streamsJson[i]).show();
+		// else
+		// 		$('.'+streamsJson[i]).hide();
 	};
 }
 
