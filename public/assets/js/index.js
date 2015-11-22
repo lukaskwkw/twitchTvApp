@@ -14,8 +14,6 @@ $(document).ready(function(){
 	 for (var i= 0; i<streamsArr.length; i++)
 		$.getJSON(query+streamsArr[i],populateLists);
 
-console.log(/z/gi.test("RobotCaleb"));
-
 $('.js-search').keyup(search);
 
 });
@@ -31,9 +29,17 @@ function search ()
 	var regex = new RegExp(search, "gi");
 	for (var i = 0; i < streamsJson.length; i++) {
 		if (regex.test(streamsJson[i])===true)
-			$('.'+streamsJson[i]).show();
+			{
+				// why it work when cl is before? i don't know :(
+				// console.log(search,regex,i,streamsJson[i],regex.test(streamsJson[i]));
+				$('.'+streamsJson[i]).show();
+			}
 		else
-			$('.'+streamsJson[i]).hide();
+			{
+				// why it work when cl is before? i don't know :(
+				// console.log(search,regex,i,streamsJson[i],regex.test(streamsJson[i]));
+				$('.'+streamsJson[i]).hide();
+			}
 	};
 }
 
@@ -43,7 +49,6 @@ function populateLists(json)
 	var tabOnline = $('.js-tab-online');
 	var tabOffline = $('.js-tab-offline');
 	var html='';
-	console.log(json);
 		if (json.stream!==null)
 		{	
 			totalUsers++;
@@ -100,9 +105,7 @@ function populateLists(json)
 
 	function getProperty(obj, prop)
 	{
-			console.log(obj,obj[prop],prop);
 		if(obj.hasOwnProperty(prop) && Boolean(obj[prop])){
-			console.log(obj[prop]);
 			return obj[prop];
 		}
 		else
