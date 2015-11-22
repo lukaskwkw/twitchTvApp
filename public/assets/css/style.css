@@ -3,13 +3,15 @@
   width: 33.33333%; }
 
 .tab-panel {
-  min-width: 250px;
-  margin-top: 30px; }
+  min-width: 310px;
+  margin-top: 30px;
+  overflow: hidden; }
+
+.input-group {
+  disabled: true; }
 
 .container-fluid > div {
-  margin-top: 1em;
-  border-radius: 1em;
-  border: 2px solid black; }
+  margin-top: 1em; }
 
 .user:hover {
   background-color: rgba(212, 232, 234, 0.2); }
@@ -25,8 +27,9 @@
 
 .user_info {
   position: absolute;
-  right: 0;
-  top: 1.5em; }
+  left: 6em;
+  top: 4.5em;
+  font-size: .65em; }
 
 .user__status {
   position: absolute;
